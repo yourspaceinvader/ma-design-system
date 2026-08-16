@@ -43,8 +43,7 @@ async function buildTheme(mode) {
           {
             destination: `theme.${mode}.css`,
             format: 'css/variables',
-            options: { selector: `[data-theme="${mode}"]` },
-            filter: (token) => token.filePath.endsWith(`semantic.${mode}.json`),
+options: { selector: mode === 'light' ? ':root, [data-theme="light"]' : `[data-theme="${mode}"]` },            filter: (token) => token.filePath.endsWith(`semantic.${mode}.json`),
           },
         ],
       },

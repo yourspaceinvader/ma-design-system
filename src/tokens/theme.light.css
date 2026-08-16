@@ -2,7 +2,7 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-[data-theme="light"] {
+:root, [data-theme="light"] {
   --color-bg-surface: #f9fafb;
   --color-bg-surface-raised: #f3f4f6;
   --color-bg-primary: #093b5e;
