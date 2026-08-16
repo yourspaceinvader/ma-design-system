@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import './tokens/global.css';
+@import './tokens/theme.light.css';
+@import './tokens/theme.dark.css';
+@config '../tailwind.config.js';
+
+/* Default to light theme when no explicit data-theme is set */
+:root {
+  color-scheme: light;
+}
+[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg-surface);
+  color: var(--color-text-default);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}

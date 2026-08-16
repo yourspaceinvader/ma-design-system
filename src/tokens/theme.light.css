@@ -1,0 +1,35 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme="light"] {
+  --color-bg-surface: #f9fafb;
+  --color-bg-surface-raised: #f3f4f6;
+  --color-bg-primary: #093b5e;
+  --color-bg-primary-hover: #072f4b;
+  --color-bg-primary-pressed: #052238;
+  --color-bg-primary-subtle: #eaf0f5;
+  --color-bg-success: #d6f5e1;
+  --color-bg-success-solid: #1a9e4f;
+  --color-bg-warning: #fbebcc;
+  --color-bg-warning-solid: #c98a00;
+  --color-bg-critical: #fbdada;
+  --color-bg-critical-solid: #d42323;
+  --color-bg-info-solid: #2a699e;
+  --color-bg-disabled: #e5e7eb;
+  --color-bg-inverse: #111827;
+  --color-text-default: #111827;
+  --color-text-muted: #6b7280;
+  --color-text-on-primary: #f9fafb;
+  --color-text-success: #0f5c2e;
+  --color-text-warning: #7a5200;
+  --color-text-critical: #7a1414;
+  --color-text-primary: #093b5e;
+  --color-text-disabled: #9ca3af;
+  --color-text-inverse: #f9fafb;
+  --color-border-default: #d1d5db;
+  --color-border-critical: #d42323;
+  --color-border-primary: #093b5e;
+  --color-border-disabled: #d1d5db;
+  --color-border-secondary: #8dc63f;
+}

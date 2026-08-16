@@ -1,0 +1,61 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{ts,tsx}'],
+  darkMode: ['selector', '[data-theme="dark"]'],
+  theme: {
+    extend: {
+      colors: {
+        bg: {
+          surface: 'var(--color-bg-surface)',
+          'surface-raised': 'var(--color-bg-surface-raised)',
+          primary: 'var(--color-bg-primary)',
+          'primary-hover': 'var(--color-bg-primary-hover)',
+          'primary-pressed': 'var(--color-bg-primary-pressed)',
+          success: 'var(--color-bg-success)',
+          warning: 'var(--color-bg-warning)',
+          critical: 'var(--color-bg-critical)',
+        },
+        text: {
+          DEFAULT: 'var(--color-text-default)',
+          muted: 'var(--color-text-muted)',
+          'on-primary': 'var(--color-text-on-primary)',
+          success: 'var(--color-text-success)',
+          warning: 'var(--color-text-warning)',
+          critical: 'var(--color-text-critical)',
+        },
+        border: {
+          DEFAULT: 'var(--color-border-default)',
+          critical: 'var(--color-border-critical)',
+        },
+      },
+      spacing: {
+        1: 'var(--spacing-1)',
+        2: 'var(--spacing-2)',
+        3: 'var(--spacing-3)',
+        4: 'var(--spacing-4)',
+        5: 'var(--spacing-5)',
+        6: 'var(--spacing-6)',
+        7: 'var(--spacing-7)',
+        8: 'var(--spacing-8)',
+      },
+      borderRadius: {
+        sm: 'var(--radius-sm)',
+        md: 'var(--radius-md)',
+        lg: 'var(--radius-lg)',
+        full: 'var(--radius-full)',
+      },
+      fontSize: {
+        'display-lg': 'var(--font-size-display-lg)',
+        'headline-lg': 'var(--font-size-headline-lg)',
+        'headline-md': 'var(--font-size-headline-md)',
+        'title-lg': 'var(--font-size-title-lg)',
+        'title-md': 'var(--font-size-title-md)',
+        'body-lg': 'var(--font-size-body-lg)',
+        'body-md': 'var(--font-size-body-md)',
+        'label-lg': 'var(--font-size-label-lg)',
+        'label-md': 'var(--font-size-label-md)',
+      },
+    },
+  },
+  plugins: [],
+};

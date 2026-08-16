@@ -1,0 +1,97 @@
+{
+  "color": {
+    "bg": {
+      "surface": {
+        "value": "{color.neutral.50}"
+      },
+      "surface-raised": {
+        "value": "{color.neutral.100}"
+      },
+      "primary": {
+        "value": "{color.primary.700}"
+      },
+      "primary-hover": {
+        "value": "{color.primary.800}"
+      },
+      "primary-pressed": {
+        "value": "{color.primary.900}"
+      },
+      "primary-subtle": {
+        "value": "{color.primary.50}"
+      },
+      "success": {
+        "value": "{color.success.100}"
+      },
+      "success-solid": {
+        "value": "{color.success.500}"
+      },
+      "warning": {
+        "value": "{color.warning.100}"
+      },
+      "warning-solid": {
+        "value": "{color.warning.500}"
+      },
+      "critical": {
+        "value": "{color.critical.100}"
+      },
+      "critical-solid": {
+        "value": "{color.critical.500}"
+      },
+      "info-solid": {
+        "value": "{color.primary.500}"
+      },
+      "disabled": {
+        "value": "{color.neutral.200}"
+      },
+      "inverse": {
+        "value": "{color.neutral.900}"
+      }
+    },
+    "text": {
+      "default": {
+        "value": "{color.neutral.900}"
+      },
+      "muted": {
+        "value": "{color.neutral.500}"
+      },
+      "on-primary": {
+        "value": "{color.neutral.50}"
+      },
+      "success": {
+        "value": "{color.success.700}"
+      },
+      "warning": {
+        "value": "{color.warning.700}"
+      },
+      "critical": {
+        "value": "{color.critical.700}"
+      },
+      "primary": {
+        "value": "{color.primary.700}"
+      },
+      "disabled": {
+        "value": "{color.neutral.400}"
+      },
+      "inverse": {
+        "value": "{color.neutral.50}"
+      }
+    },
+    "border": {
+      "default": {
+        "value": "{color.neutral.300}"
+      },
+      "critical": {
+        "value": "{color.critical.500}"
+      },
+      "primary": {
+        "value": "{color.primary.700}"
+      },
+      "disabled": {
+        "value": "{color.neutral.300}"
+      },
+      "secondary": {
+        "value": "{color.secondary.500}"
+      }
+    }
+  }
+}

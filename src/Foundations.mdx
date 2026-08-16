@@ -1,0 +1,51 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Overview" />
+
+# Foundations
+
+This is the source-of-truth layer. Every value here comes from `tokens/primitive.json` and
+`tokens/semantic.{light,dark}.json`, compiled through Style Dictionary (`npm run tokens`) into
+`src/tokens/*.css` — the same files this Storybook and any consuming app import. **Nothing below
+is a hard-coded value in a component.**
+
+## Token architecture
+
+1. **Primitive** — raw ramp values (`color.primary.700`, `spacing.4`, ...). Never used directly in components.
+2. **Semantic** — purpose-mapped, mode-aware (`color-bg-primary`, `color-text-critical`, ...). Two modes: `light` and `dark`, same names, different primitive references.
+3. **Utility** — single-mode, non-ramp values (`color-utility-alpha-black-10`, ...) for one-off needs like hover overlays and dividers that don't belong on a semantic ramp. Utility tokens live in the same collection as Primitives, but unlike the raw ramps, they're **designed to be bound directly** in components — that's the one exception to rule #1.
+4. **Component** — (next step) component-scoped aliases of semantic tokens for full re-skinning isolation.
+
+## Color
+
+<div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 12 }}>
+  {['bg-primary', 'bg-success', 'bg-warning', 'bg-critical', 'bg-surface', 'bg-surface-raised'].map((t) => (
+    <div key={t} style={{ textAlign: 'center' }}>
+      <div style={{ width: 96, height: 64, borderRadius: 8, border: '1px solid var(--color-border-default)', background: `var(--color-${t})` }} />
+      <code style={{ fontSize: 11 }}>--color-{t}</code>
+    </div>
+  ))}
+</div>
+
+Toggle the **Theme** control in the toolbar above to see these same semantic tokens resolve to
+different primitives in dark mode — the token *names* never change, only what they point to.
+
+## Type scale
+
+<div style={{ marginTop: 12 }}>
+  <div style={{ fontSize: 'var(--font-size-headline-lg)', fontWeight: 600 }}>Headline / Large — Deal Summary</div>
+  <div style={{ fontSize: 'var(--font-size-title-lg)', fontWeight: 600 }}>Title / Large — Project Falcon</div>
+  <div style={{ fontSize: 'var(--font-size-body-lg)' }}>Body / Large — Standard paragraph and form text.</div>
+  <div style={{ fontSize: 'var(--font-size-label-md)', color: 'var(--color-text-muted)' }}>Label / Medium — helper text, captions</div>
+</div>
+
+## Spacing & radius
+
+<div style={{ display: 'flex', gap: 'var(--spacing-3)', alignItems: 'flex-end', marginTop: 12 }}>
+  {['1', '2', '3', '4', '5', '6'].map((s) => (
+    <div key={s} style={{ textAlign: 'center' }}>
+      <div style={{ width: `var(--spacing-${s})`, height: `var(--spacing-${s})`, background: 'var(--color-bg-primary)', borderRadius: 'var(--radius-sm)' }} />
+      <code style={{ fontSize: 11 }}>spacing.{s}</code>
+    </div>
+  ))}
+</div>
