@@ -11,7 +11,7 @@ export default function App() {
       <div className="mx-auto max-w-xl px-6 py-10">
         <div className="mb-8 flex items-center justify-between">
           <h1 className="text-headline-md font-semibold text-text">M&amp;A Design System</h1>
-          <Button size="sm" variant="secondary" onClick={() => setTheme((t) => (t === 'light' ? 'dark' : 'light'))}>
+          <Button size="sm" variant="outlined" onClick={() => setTheme((t) => (t === 'light' ? 'dark' : 'light'))}>
             {theme === 'light' ? 'Switch to dark' : 'Switch to light'}
           </Button>
         </div>
@@ -27,8 +27,8 @@ export default function App() {
         </div>
 
         <div className="flex gap-3">
-          <Button variant="primary">Approve deal</Button>
-          <Button variant="secondary">Request changes</Button>
+          <Button variant="contained">Approve deal</Button>
+          <Button variant="outlined">Request changes</Button>
           <Button variant="critical">Withdraw offer</Button>
         </div>
       </div>

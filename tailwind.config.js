@@ -11,6 +11,8 @@ export default {
           primary: 'var(--color-bg-primary)',
           'primary-hover': 'var(--color-bg-primary-hover)',
           'primary-pressed': 'var(--color-bg-primary-pressed)',
+          'primary-subtle': 'var(--color-bg-primary-subtle)',
+          disabled: 'var(--color-bg-disabled)',
           success: 'var(--color-bg-success)',
           warning: 'var(--color-bg-warning)',
           critical: 'var(--color-bg-critical)',
@@ -18,6 +20,8 @@ export default {
         text: {
           DEFAULT: 'var(--color-text-default)',
           muted: 'var(--color-text-muted)',
+          primary: 'var(--color-text-primary)',
+          disabled: 'var(--color-text-disabled)',
           'on-primary': 'var(--color-text-on-primary)',
           success: 'var(--color-text-success)',
           warning: 'var(--color-text-warning)',
@@ -25,6 +29,8 @@ export default {
         },
         border: {
           DEFAULT: 'var(--color-border-default)',
+          primary: 'var(--color-border-primary)',
+          disabled: 'var(--color-border-disabled)',
           critical: 'var(--color-border-critical)',
         },
       },
