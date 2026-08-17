@@ -318,6 +318,12 @@
     }
   },
   "radius": {
+    "none": {
+      "value": "0px"
+    },
+    "xs": {
+      "value": "2px"
+    },
     "sm": {
       "value": "4px"
     },
@@ -325,10 +331,59 @@
       "value": "8px"
     },
     "lg": {
+      "value": "16px"
+    },
+    "xl": {
+      "value": "24px"
+    },
+    "xxl": {
+      "value": "32px"
+    },
+    "fully-round": {
+      "value": "999px"
+    }
+  },
+  "borderWidth": {
+    "none": {
+      "value": "0px"
+    },
+    "thin": {
+      "value": "1px"
+    },
+    "default": {
+      "value": "2px"
+    },
+    "thick": {
+      "value": "4px"
+    }
+  },
+  "size": {
+    "xs": {
       "value": "12px"
     },
-    "full": {
-      "value": "9999px"
+    "sm": {
+      "value": "16px"
+    },
+    "md": {
+      "value": "20px"
+    },
+    "lg": {
+      "value": "24px"
+    },
+    "xl": {
+      "value": "32px"
+    },
+    "xxl": {
+      "value": "40px"
+    },
+    "xxxl": {
+      "value": "48px"
+    },
+    "xxxxl": {
+      "value": "56px"
+    },
+    "xxxxxl": {
+      "value": "64px"
     }
   },
   "fontSize": {
